@@ -4,6 +4,7 @@ import re
 import datetime
 import selenium
 import os, sys
+from shutil import which
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
