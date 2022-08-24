@@ -101,6 +101,8 @@ if button_pass:
   time.sleep(2)
   browser.switch_to.window(window_before)
   time.sleep(2)
+  st.write(miro_url)
+  time.sleep(30)
 #   check_table_for_copy_link =  browser.find_element(By.XPATH,"//div[@class = 'icon-3JFhr']").click()
 #   time.sleep(1)
 #   duplicate_link =  browser.find_element(By.XPATH,"//div[@data-testid = 'copy_link_board_action']").click()
@@ -109,5 +111,5 @@ if button_pass:
 #   head_links = win32clipboard.GetClipboardData()
 #   win32clipboard.CloseClipboard()
   browser.quit()
-  st.write(f"It's your url for work in Miro dashboard - {miro_url}")
+  
   time.sleep(120)
