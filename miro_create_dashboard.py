@@ -26,8 +26,7 @@ from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
-# import win32clipboard
-# import pywin32clipboard
+import win32clipboard
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -120,5 +119,5 @@ if button_pass:
   head_links = win32clipboard.GetClipboardData()
   win32clipboard.CloseClipboard()
   browser.quit()
-  st.write(f"It's your url for work in Miro dashboard -{head_links}")
+  st.write(f"It's your url for work in Miro dashboard - {head_links}")
   time.sleep(120)
