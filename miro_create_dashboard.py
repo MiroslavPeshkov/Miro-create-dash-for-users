@@ -52,7 +52,7 @@ st.subheader("Box for input user's name and surname")
 test_name = st.text_input('Fill this rows (name and surname)')
 button_pass = st.button('Click for start running app')
 if button_pass:
-  st.write(test_name)
+#   st.write(test_name)
   browser = webdriver.Firefox(executable_path=r'/home/appuser/venv/bin/geckodriver.exe', options = firefoxOptions)
   browser.implicitly_wait(7)
   browser.get(url)
@@ -100,7 +100,7 @@ if button_pass:
   time.sleep(2)
   browser.switch_to.window(window_before)
   time.sleep(2)
-  st.write(f'It is link for working in Miro dashboards {miro_url}')
+  st.write(f'It is link for working in Miro dashboard - {miro_url}')
   time.sleep(30)
   browser.quit()
  
