@@ -37,7 +37,6 @@ firefoxOptions.add_argument('--allow-running-insecure-content')
 firefoxOptions.binary = FIREFOXPATH
 
 path = os.getcwd()
-st.write(path)
 
 @st.experimental_singleton
 def installff():
@@ -69,7 +68,7 @@ if button_pass:
   time.sleep(3)
   submit = browser.find_element(By.XPATH, "//button[@class = 'signup__submit']").click()
   time.sleep(4)
-  st.write('I logging')
+#   st.write('I logging')
   # check table for duplicate
   check_table =  browser.find_element(By.XPATH,"//div[@class = 'icon-3JFhr']")#.click()
   browser.execute_script("arguments[0].click();", check_table)
@@ -87,7 +86,7 @@ if button_pass:
   # edit setting of dashboard
   browser.switch_to.window(window_after)
   time.sleep(15)
-  st.write('I create table')
+#   st.write('I create table')
   miro_url = browser.current_url
   share_but = browser.find_element(By.XPATH, "//div[@data-id = 'permissionPanel']").click()
   time.sleep(1)
@@ -101,15 +100,7 @@ if button_pass:
   time.sleep(2)
   browser.switch_to.window(window_before)
   time.sleep(2)
-  st.write(miro_url)
+  st.write(f'It is link for working in Miro dashboards {miro_url}')
   time.sleep(30)
-#   check_table_for_copy_link =  browser.find_element(By.XPATH,"//div[@class = 'icon-3JFhr']").click()
-#   time.sleep(1)
-#   duplicate_link =  browser.find_element(By.XPATH,"//div[@data-testid = 'copy_link_board_action']").click()
-#   time.sleep(1)
-#   win32clipboard.OpenClipboard()
-#   head_links = win32clipboard.GetClipboardData()
-#   win32clipboard.CloseClipboard()
   browser.quit()
-  
-  time.sleep(120)
+ 
