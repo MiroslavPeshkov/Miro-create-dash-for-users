@@ -109,5 +109,5 @@ if button_pass:
 #   head_links = win32clipboard.GetClipboardData()
 #   win32clipboard.CloseClipboard()
   browser.quit()
-  st.write(f"It's your url for work in Miro dashboard - {head_links}")
+  st.write(f"It's your url for work in Miro dashboard - {miro_url}")
   time.sleep(120)
