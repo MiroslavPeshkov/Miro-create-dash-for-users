@@ -36,7 +36,6 @@ firefoxOptions.add_argument('--allow-running-insecure-content')
 firefoxOptions.binary = FIREFOXPATH
 
 path = os.getcwd()
-st.write(path)
 
 @st.experimental_singleton
 def installff():
